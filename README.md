@@ -1,4 +1,4 @@
-# UAV-USV-Landing
+# AWESOME UAV-USV-Landing
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 A curated, research-oriented reading list for **unmanned aerial vehicle (UAV) landing on unmanned surface vehicle (USV)** in waves, wind, and open-water conditions — with a focus on **perception + estimation + control + learning**.
