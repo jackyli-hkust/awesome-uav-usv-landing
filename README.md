@@ -1,5 +1,7 @@
 # UAV-USV-Landing
-A curated, research-oriented reading list for **UAV landing on Uncrewed Surface Vessels (USVs)** in waves, wind, and open-water conditions — with a focus on **perception + estimation + control + learning**.
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+
+A curated, research-oriented reading list for **unmanned aerial vehicle (UAV) landing on unmanned surface vehicle (USV)** in waves, wind, and open-water conditions — with a focus on **perception + estimation + control + learning**.
 
 > Goal: help researchers quickly map the space, compare assumptions, and find practical baselines, code, and open problems.
 
