@@ -133,10 +133,41 @@ Each paper entry is written to be *comparable*, not just a link.
 - **Robustness sweeps**: wind levels, wave states, comms delay/dropout, perception failure rate
 
 ### Sim Tools / Building Blocks
-- Wave + vessel motion generators: (fill)
-- UAV dynamics / wind disturbance models: (fill)
-- Vision + AprilTag / marker simulation: (fill)
-- (Optional) repo links for reproducible baselines
+
+#### Wave + Vessel Motion (USV / marine environment)
+- [VRX (Virtual RobotX) Simulation](https://github.com/osrf/vrx) — Gazebo-based USV competition-grade marine environment (waves, tasks, sensors).  
+- [Gazebo Sim](https://gazebosim.org/) — the core simulator stack used by many marine + aerial robotics projects.  
+- [UUV Simulator](https://github.com/uuvsimulator/uuv_simulator) — Gazebo/ROS plugins for underwater/ocean environments (useful for ocean-current / fluid plugins even if you only need “water physics”).
+
+#### UAV Dynamics + Wind / Disturbance Models
+ [PX4 SITL + Gazebo (gz)](https://docs.px4.io/main/en/sim_gazebo_gz/) — common research baseline for multirotors/VTOL; supports wind and rich worlds.  
+- [PX4 Gazebo Models & Worlds](https://github.com/PX4/PX4-gazebo-models) — curated vehicles/worlds used by PX4’s Gazebo Sim workflows.  
+- [PX4-SITL Gazebo Classic Plugins](https://github.com/PX4/PX4-SITL_gazebo-classic) — classic plugin suite (still cited in older papers).  
+- [RotorS Simulator](https://github.com/ethz-asl/rotors_simulator) — classic academic multirotor dynamics + Gazebo plugins (includes wind plugin; widely referenced in literature).  
+- [JSBSim](https://github.com/JSBSim-Team/jsbsim) ([official site](https://jsbsim-team.github.io/jsbsim/index.html)) — flight dynamics model (FDM) used in flight simulation research.
+
+#### Photorealistic / Vision-Centric Simulation (for perception-heavy landing papers)
+- [AirSim](https://github.com/microsoft/AirSim) ([docs](https://microsoft.github.io/AirSim/)) — Unreal/Unity-based sim with PX4/ArduPilot SITL support; popular for vision-based UAV research.  
+- [Flightmare](https://github.com/uzh-rpg/flightmare) ([project page](https://uzh-rpg.github.io/flightmare/)) — modular quadrotor sim (Unity renderer + physics engine); common in learning/perception pipelines.  
+- [NVIDIA Isaac Sim](https://developer.nvidia.com/isaac/sim) ([docs](https://docs.omniverse.nvidia.com/isaacsim/index.html)) — high-fidelity robotics sim + synthetic data generation.
+
+#### Autopilot + SITL Tooling (common in reproducible baselines)
+- [ArduPilot SITL (official docs)](https://ardupilot.org/dev/docs/sitl-simulator-software-in-the-loop.html) — widely used SITL workflow (often paired with Mission Planner / MAVProxy).  
+- [PX4 Simulation Overview](https://docs.px4.io/main/en/simulation/) — entry point for all PX4 sim backends.
+
+#### ROS / MAVLink Interfaces (bridge research code ↔ autopilot)
+- [ROS 2 Docs](https://docs.ros.org/) — standard middleware for research pipelines.  
+- [MAVROS](https://github.com/mavlink/mavros) — MAVLink ↔ ROS bridge (ROS1/ROS2 branches).  
+- [MAVSDK](https://github.com/mavlink/MAVSDK) ([guide](https://mavsdk.mavlink.io/)) — high-level MAVLink API (C++/Python/etc.) used for offboard control + integration tests.
+
+#### Vision + AprilTag / Marker Toolchain (landing pad detection, relative pose)
+- [AprilTag 3](https://github.com/AprilRobotics/apriltag) — core AprilTag detector library.  
+- [apriltag_ros](https://github.com/AprilRobotics/apriltag_ros) — ROS wrapper for AprilTag 3.  
+- [OpenCV ArUco module](https://docs.opencv.org/3.4/d9/d6d/tutorial_table_of_content_aruco.html) — alternative marker family + pose estimation tools (often used when AprilTag isn’t required).
+
+#### Reproducible Baselines (add your own as you build!)
+- (your baseline) `px4 + gazebo + deck-motion-world` — minimal example to reproduce your landing setup
+- (your baseline) `mpc-controller + estimator + logs` — scripts for replay and benchmarking
 
 ---
 
