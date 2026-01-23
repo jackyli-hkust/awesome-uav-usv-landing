@@ -65,7 +65,7 @@ Each paper entry is written to be *comparable*, not just a link.
 - **Link**: https://arxiv.org/abs/2410.21674  
 - **Authors / Venue / Year**: Jess Stephenson, William S. Stewart, Melissa Greeff — 2024 (arXiv; check final venue)
 - **Setting**: wave-like conditions; emphasizes timing/place to reduce tilt risk
-- **Sensing / State**: (fill)  
+- **Sensing / State**: VICON(external motion capture, no onboard)  
 - **Method**: Distributed MPC + **tilt-aware coupling cost learned as a Gaussian Process (GP)**
 - **Assumptions**: (fill: comms? partial sharing? delayed?)  
 - **Validation**: indoor experiments using a custom platform attached to a UGV to emulate USV tilt motion
