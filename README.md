@@ -172,16 +172,4 @@ PRs are welcome! Please add entries using the template below.
 
 ---
 
-## Citation
-If you use this list in your work, please consider citing the repository:
-
-~~~bibtex
-@misc{uav_usv_landing,
-  title        = {UAV-USV-Landing},
-  author       = {Your Name},
-  howpublished = {GitHub repository},
-  year         = {2026},
-  url          = {https://github.com/<your-handle>/<repo-name>}
-}
-~~~
 
