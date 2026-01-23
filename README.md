@@ -11,14 +11,9 @@ A curated, research-oriented reading list for **unmanned aerial vehicle (UAV) la
 - [Scope](#scope)
 - [How to Use This List](#how-to-use-this-list)
 - [Core Papers](#core-papers)
-  - [Distributed / Decentralized MPC for UAV–USV Landing](#distributed--decentralized-mpc-for-uavusv-landing)
-  - [MPC for Harsh Winds & Open Waters](#mpc-for-harsh-winds--open-waters)
-- [Perception & State Estimation](#perception--state-estimation)
-- [Learning-Enhanced Control](#learning-enhanced-control)
 - [Simulation, Benchmarks, and Evaluation](#simulation-benchmarks-and-evaluation)
 - [Open Problems](#open-problems)
 - [Contributing](#contributing)
-- [Citation](#citation)
 
 ---
 
@@ -99,26 +94,6 @@ Each paper entry is written to be *comparable*, not just a link.
   - Strength: (fill)
   - Limitation: (fill)
 - **Tags**: `MPC`, `vision`, `no-comms`, `open-waters`, `wind`
-
----
-
-## Perception & State Estimation
-> Add papers on relative pose estimation, deck tracking, onboard-only sensing, latency & dropout robustness.
-
-- (paper) **Title** — link  
-  - **What it estimates**: (relative pose / deck tilt / wave phase / etc.)
-  - **Sensors**: (AprilTag / VIO / RTK / IMU / radar / etc.)
-  - **Why it matters for landing**: (1 line)
-
----
-
-## Learning-Enhanced Control
-> Residual learning, GP uncertainty, robust learning MPC, safety filters / CBFs for hard constraints.
-
-- (paper) **Title** — link  
-  - **Base controller**: (MPC / PID / geometric control / etc.)
-  - **Learning component**: (residual NN / GP / RL policy / etc.)
-  - **Safety mechanism**: (CBF / safety filter / tube MPC / etc.)
 
 ---
 
