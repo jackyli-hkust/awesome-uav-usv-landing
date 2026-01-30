@@ -5,6 +5,11 @@ A curated, research-oriented reading list for **unmanned aerial vehicle (UAV) la
 
 > Goal: help researchers quickly map the space, compare assumptions, and find practical baselines, code, and open problems.
 
+<!-- Option A (recommended): local image in your repo -->
+<p align="center">
+  <img src="assets/cover.png" alt="UAV–USV Landing Cover" width="900" />
+</p>
+
 ---
 
 ## Contents
