@@ -7,7 +7,7 @@ A curated, research-oriented reading list for **unmanned aerial vehicle (UAV) la
 
 <!-- Option A (recommended): local image in your repo -->
 <p align="center">
-  <img src="assets/cover.png" alt="UAV–USV Landing Cover" width="900" />
+  <img src="assets/cover.png" alt="UAV–USV Landing Cover" width="500" />
 </p>
 
 ---
